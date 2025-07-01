@@ -1,0 +1,37 @@
+### Get All Cities (Run this first to find a cityId, e.g., for "New York")
+GET http://localhost:8080/api/cities
+Accept: application/json
+
+### Get All Passengers (Run this first to find a passengerId, e.g., for "Alice")
+GET http://localhost:8080/api/passengers
+Accept: application/json
+
+### Get All Aircrafts (Run this first to find an aircraftId, e.g., for "Boeing 747")
+GET http://localhost:8080/api/aircrafts
+Accept: application/json
+
+### Get All Airports (Run this first to find an airportId, e.g., for "JFK")
+GET http://localhost:8080/api/airports
+Accept: application/json
+
+### --- Questions ---
+
+### Question 1: What airports are there in each city?
+# Replace {cityId} with an actual ID from "Get All Cities" (e.g., if New York is ID 38, use /api/cities/38/airports)
+GET http://localhost:8080/api/cities/25/airports
+Accept: application/json
+
+### Question 2: What aircraft has each passenger flown on?
+# Replace {passengerId} with an actual ID from "Get All Passengers" (e.g., if Alice is ID 1, use /api/passengers/1/aircrafts)
+GET http://localhost:8080/api/passengers/25/aircrafts
+Accept: application/json
+
+### Question 3: What airports do aircraft take off from and land at?
+# Replace {aircraftId} with an actual ID from "Get All Aircrafts" (e.g., if Boeing 747 is ID 1, use /api/aircrafts/1/airports)
+GET http://localhost:8080/api/aircrafts/27/airports
+Accept: application/json
+
+### Question 4: What airports have passengers used?
+# Replace {passengerId} with an actual ID from "Get All Passengers" (e.g., if Alice is ID 1, use /api/passengers/1/airportsUsed)
+GET http://localhost:8080/api/passengers/25/airportsUsed
+Accept: application/json
