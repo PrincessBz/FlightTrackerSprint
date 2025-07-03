@@ -1,4 +1,4 @@
-Flight Tracker REST API
+Flight Tracker REST API.
 This repository contains the backend RESTful API for the Flight Tracker application. It is built using Spring Boot and manages data related to cities, airports, passengers, and aircrafts, providing a set of endpoints for data retrieval and manipulation.
 
 - Table of Contents
