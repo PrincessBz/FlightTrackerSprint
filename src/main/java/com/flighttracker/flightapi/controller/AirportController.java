@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/airports")
+@CrossOrigin(origins = "http://localhost:5173") // Adjust the origin as needed
 public class AirportController {
     @Autowired
     private AirportService airportService; // Now injecting AirportService
