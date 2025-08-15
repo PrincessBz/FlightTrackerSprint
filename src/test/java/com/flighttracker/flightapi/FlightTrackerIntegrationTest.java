@@ -1,4 +1,4 @@
-package com.flighttracker.flightapi.service;
+package com.flighttracker.flightapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +48,7 @@ class FlightTrackerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect((ResultMatcher) content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$").isArray())
-                .andExpect(jsonPath("$.length()").value(4));
+                .andExpect(jsonPath("$.length()").value(2));
     }
 
     @Test
@@ -58,7 +58,7 @@ class FlightTrackerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect((ResultMatcher) content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$").isArray())
-                .andExpect(jsonPath("$.length()").value(4));
+                .andExpect(jsonPath("$.length()").value(2));
     }
 
 

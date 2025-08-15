@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/flights")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173") // Adjust the origin as
+@CrossOrigin(origins = "*") // Adjust the origin as
 public class FlightController {
     @Autowired
     private FlightService flightService;

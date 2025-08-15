@@ -15,7 +15,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/aircrafts")
-@CrossOrigin(origins = "http://localhost:5173") // Adjust the origin as needed
+@CrossOrigin(origins = "*") // Adjust the origin as needed
 public class AircraftController {
     @Autowired
     private AircraftService aircraftService;
