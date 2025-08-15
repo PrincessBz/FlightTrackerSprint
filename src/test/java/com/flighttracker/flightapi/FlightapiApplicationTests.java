@@ -1,4 +1,4 @@
-package com.flighttracker;
+package com.flighttracker.flightapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

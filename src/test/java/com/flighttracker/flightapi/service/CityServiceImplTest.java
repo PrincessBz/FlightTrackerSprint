@@ -1,5 +1,6 @@
 package com.flighttracker.flightapi.service;
 
+import com.flighttracker.flightapi.model.Airport;
 import com.flighttracker.flightapi.model.City;
 import com.flighttracker.flightapi.repository.CityRepository;
 import com.flighttracker.flightapi.service.impl.CityServiceImpl;
